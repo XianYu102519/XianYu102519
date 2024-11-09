@@ -1,0 +1,152 @@
+    /* 基本重置 */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* 一般樣式 */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2e4;
+        color: #333;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* 導覽列 */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #dfcda0;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6392f0;
+}
+
+
+    /* 個人檔案區塊 */
+    /* 關於我區域 */
+
+aside{
+    padding: 10px;
+    margin: 20px 50px;
+    text-align: center;
+    column-rule: #333;
+    column-rule-style:none ;
+}
+ section.profile {
+        display: flex;
+        gap: 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    section.profile img {
+        width: 150px;
+        height: 150px;
+        background-color: #ccc;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    section.profile p {
+        margin-top: 10px;
+    }
+
+    /* 個人資訊區塊 */
+    h2.personal-info-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    section.profile p {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+  /* 技能區塊 */
+  h2{
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+  }
+  .skills-bar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skills-bar span {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.bar {
+    width: 200px;
+    height: 12px;
+    background-color: #d3d3d3;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar-fill {
+    background-color: #153e8e;
+    height: 100%;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+    /* 經歷區塊 */
+    section.experience {
+        padding: 20px 0;
+    }
+
+    h2.experience-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    article.experience-item {
+        margin-bottom: 20px;
+    }
+
+    h3.experience-item-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .experience-photos {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .experience-photos img {
+        width: 400px;
+        height: 300px;
+        background-color: #ccc;
+    }
