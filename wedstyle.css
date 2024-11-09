@@ -150,3 +150,21 @@ aside{
         height: 300px;
         background-color: #ccc;
     }
+
+ /* Footer 樣式 */
+ footer {
+    background-color: #f4d695;
+    text-align: center;
+    padding: 10px;
+    color: #122147;
+}
+
+footer a {
+    color: #4b7dbb;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
