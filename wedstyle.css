@@ -4,12 +4,33 @@
         padding: 0;
         box-sizing: border-box;
     }
+    @font-face {
+        font-family: 'Sriracha';
+        src: url('fonts/Sriracha.woff2') format('woff2'), /* 確保檔案位置正確 */
+             url('fonts/Sriracha.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+   /* 引入 Google Fonts */
+   @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+   /* 定義字體樣式 */
+   .knewave-regular {
+        font-family: "Knewave", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+        font-family: 'Sriracha', cursive;
+    }
+    
 
     /* 一般樣式 */
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2e4;
-        color: #333;
+        font-family: 'Sriracha', cursive;
+        background-color: #c1c3c6;
+        color: #5c5a5a;
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
@@ -20,7 +41,7 @@
 nav {
     display: flex;
     justify-content: center;
-    background-color: #dfcda0;
+    background-color: #7f9aac;
     padding: 10px 0;
 }
 
@@ -39,15 +60,33 @@ nav a:hover {
 
 
     /* 個人檔案區塊 */
-    /* 關於我區域 */
-
 aside{
     padding: 10px;
     margin: 20px 50px;
     text-align: center;
-    column-rule: #333;
-    column-rule-style:none ;
 }
+aside a {
+    color: #2a3e57;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+aside h1 {
+    color: #0f1e38;
+    padding: 5px;
+    font-size: 26px;
+      
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-image: url(image/pexels-janakukebal-6496462.jpg); /* 替換為背景圖片的 URL */
+    background-size: cover; /* 確保圖片覆蓋整個區塊 */
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
  section.profile {
         display: flex;
         gap: 20px;
@@ -56,11 +95,10 @@ aside{
     }
 
     section.profile img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 280px;
         background-color: #ccc;
-        border-radius: 50%;
-        object-fit: cover;
+        
     }
     
     section.profile p {
@@ -79,7 +117,11 @@ aside{
         font-size: 18px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    section.profile h1 {
+        font-family: "Knewave", system-ui;
+        font-size: 20px;
 
+    }
 
   /* 技能區塊 */
   h2{
@@ -92,19 +134,21 @@ aside{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .skills-bar span {
     margin-right: 10px;
     font-weight: bold;
     font-size: 20px;
-    color: #333;
+    color: #0d0b0b;
+    
 }
 
 .bar {
     width: 200px;
     height: 12px;
-    background-color: #d3d3d3;
+    background-color: #908a8a;
     border-radius: 6px;
     overflow: hidden;
     position: relative;
@@ -124,9 +168,15 @@ aside{
     section.experience {
         padding: 20px 0;
     }
+    p.experience-item{
+        font-size: 26px;
+        color: rgb(0, 10, 16);
+        margin-bottom: 15px;
+    }
 
     h2.experience-title {
         font-size: 24px;
+        color: rgb(8, 19, 27);
         margin-bottom: 15px;
     }
 
@@ -135,7 +185,8 @@ aside{
     }
 
     h3.experience-item-title {
-        font-size: 25px;
+        font-size: 26px;
+        color: rgb(8, 19, 27);
         margin-bottom: 10px;
     }
 
@@ -153,14 +204,14 @@ aside{
 
  /* Footer 樣式 */
  footer {
-    background-color: #f4d695;
+    background-color: #96c0d4;
     text-align: center;
     padding: 10px;
     color: #122147;
 }
 
 footer a {
-    color: #4b7dbb;
+    color: #0b4285;
     text-decoration: none;
     margin: 0 5px;
 }
